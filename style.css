@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.page-shell {
+    background: #ffffff;
+    max-width: 500px;
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #111;
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.field-row {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.field-row label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #666;
+}
+
+.field-row input {
+    width: 100%;
+    padding: 14px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.field-row input:focus {
+    border-color: #0070f3;
+}
+
+.field-row button {
+    width: 100%;
+    background-color: #111;
+    color: #fff;
+    border: none;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.2s ease;
+}
+
+.field-row button:hover {
+    background-color: #333;
+}
+
+.status-card {
+    background-color: #fafafa;
+    border: 1px solid #eaeaea;
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 5px;
+}
+
+.status-card p {
+    font-size: 16px;
+    margin-bottom: 12px;
+    color: #444;
+}
+
+.status-card p strong {
+    color: #111;
+}
+
+#map-frame {
+    border: none;
+    margin-top: 15px;
+    border-radius: 12px;
+    background-color: #eee;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+.footer p {
+    font-size: 12px;
+    color: #888;
+}
+
+.support-container {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.support-container h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #111;
+}
+
+.support-container input, 
+.support-container textarea {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+}
+
+.support-container input:focus, 
+.support-container textarea:focus {
+    border-color: #28a745;
+}
