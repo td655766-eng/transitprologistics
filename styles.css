@@ -1,12 +1,13 @@
+/* Reset and Base Premium Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 }
 
 body {
-    background-color: #f4f7f6;
+    background-color: #0f172a; /* Sleek dark blue/grey background */
     color: #333;
     display: flex;
     justify-content: center;
@@ -15,126 +16,158 @@ body {
     padding: 20px;
 }
 
+/* Page Container - High Energy Shadow and Border */
 .page-shell {
     background: #ffffff;
-    max-width: 500px;
+    max-width: 480px;
     width: 100%;
-    border-radius: 16px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-    padding: 30px;
+    border-radius: 24px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    padding: 40px 30px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 h1 {
-    font-size: 24px;
-    color: #111;
+    font-size: 26px;
+    color: #1e293b;
     text-align: center;
-    margin-bottom: 25px;
-    font-weight: 700;
+    margin-bottom: 30px;
+    font-weight: 800;
     letter-spacing: -0.5px;
+    text-transform: uppercase;
 }
 
+/* Input & Search Section - High Energy Styling */
 .field-row {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 12px;
 }
 
 .field-row label {
-    font-size: 14px;
-    font-weight: 600;
-    color: #666;
+    font-size: 13px;
+    font-weight: 700;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .field-row input {
     width: 100%;
-    padding: 14px;
-    border: 2px solid #e0e0e0;
-    border-radius: 10px;
+    padding: 16px;
+    border: 2px solid #cbd5e1;
+    border-radius: 14px;
     font-size: 16px;
+    font-weight: 500;
     outline: none;
-    transition: border-color 0.2s ease;
+    background-color: #f8fafc;
+    transition: all 0.2s ease;
+    color: #0f172a;
 }
 
+/* Energetic blue focus ring when clicking into the input */
 .field-row input:focus {
-    border-color: #0070f3;
+    border-color: #3b82f6;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.15);
 }
 
+/* Track Button - Bold, Modern, Interactive */
 .field-row button {
     width: 100%;
-    background-color: #111;
+    background-color: #2563eb; /* Vibrant energetic royal blue */
     color: #fff;
     border: none;
-    padding: 14px;
+    padding: 16px;
     font-size: 16px;
-    font-weight: 600;
-    border-radius: 10px;
+    font-weight: 700;
+    border-radius: 14px;
     cursor: pointer;
-    margin-top: 10px;
-    transition: background-color 0.2s ease;
+    margin-top: 8px;
+    letter-spacing: 0.5px;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
 }
 
 .field-row button:hover {
-    background-color: #333;
+    background-color: #1d4ed8;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(37, 99, 235, 0.3);
 }
 
+.field-row button:active {
+    transform: translateY(1px);
+}
+
+/* Tracking Results Card */
 .status-card {
-    background-color: #fafafa;
-    border: 1px solid #eaeaea;
-    border-radius: 12px;
-    padding: 20px;
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 24px;
     margin-top: 5px;
 }
 
 .status-card p {
-    font-size: 16px;
-    margin-bottom: 12px;
-    color: #444;
+    font-size: 15px;
+    margin-bottom: 14px;
+    color: #475569;
+    line-height: 1.5;
 }
 
 .status-card p strong {
-    color: #111;
+    color: #0f172a;
+    font-weight: 600;
 }
 
+/* Map Styling */
 #map-frame {
     border: none;
     margin-top: 15px;
-    border-radius: 12px;
-    background-color: #eee;
+    border-radius: 14px;
+    background-color: #e2e8f0;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.06);
 }
 
+/* Support & Footer Section */
 .footer {
     text-align: center;
-    margin-top: 30px;
-    padding-top: 15px;
-    border-top: 1px solid #eee;
+    margin-top: 35px;
+    padding-top: 20px;
+    border-top: 1px solid #e2e8f0;
 }
 
 .footer p {
     font-size: 12px;
-    color: #888;
+    color: #94a3b8;
+    font-weight: 500;
 }
 
 .support-container {
     margin-top: 25px;
     padding-top: 20px;
-    border-top: 1px solid #eee;
+    border-top: 1px solid #e2e8f0;
 }
 
 .support-container h3 {
-    font-size: 16px;
+    font-size: 15px;
     margin-bottom: 15px;
-    color: #111;
+    color: #1e293b;
+    font-weight: 700;
 }
 
 .support-container input, 
 .support-container textarea {
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
+    border: 2px solid #e2e8f0;
+    border-radius: 10px;
     outline: none;
     font-size: 14px;
+    background-color: #f8fafc;
+    transition: all 0.2s ease;
 }
 
 .support-container input:focus, 
 .support-container textarea:focus {
-    border-color: #28a745;
+    border-color: #10b981;
+    background-color: #ffffff;
 }
